@@ -55,9 +55,9 @@ export default ({ movie }) => {
         <li key="pch" className="list-group-item list-group-item-dark">
           Production Countries
         </li>
-        {movie.production_countries.map(coun => (
-          <li key={coun.name} className="list-group-item">
-            {coun.name}
+        {movie.production_countries.map(pc => (
+          <li key={pc.name} className="list-group-item">
+            {pc.name}
           </li>
         ))}
       </ul>
