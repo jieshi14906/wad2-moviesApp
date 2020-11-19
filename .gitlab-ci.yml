@@ -25,7 +25,7 @@ bundle_app:
     paths:
       - build/
 
-    e2etest:    
+e2etest:    
     stage: test
     before_script:
       - npm install -g http-server
