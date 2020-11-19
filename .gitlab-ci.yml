@@ -22,10 +22,10 @@ cache:
       - node_modules
 # END NEW
 # Jobs 
-
-  artifacts:
-    paths:
-      - node_modules/
+install_dependencies:
+  stage: install
+  script:
+    - npm ci
 
 bundle_app:
   stage: build
