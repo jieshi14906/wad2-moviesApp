@@ -17,10 +17,10 @@ const reducer = (state, action) => {
       };
       case "add-watchlist":
       return {
-        movies: state.movies.map((m) =>
+        upcoming: state.movies.map((m) =>
           m.id === action.payload.movie.id ? { ...m, watchlist: true } : m
         ),
-        upcoming: [...state.upcoming],
+        movies: [...state.upcoming],
         Now_playing:[...state.Now_playing],
         Top_rated:[...state.Top_rated]
       };

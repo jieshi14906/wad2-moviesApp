@@ -15,6 +15,7 @@ const MoviePage = props => {
         <PageTemplate movie={movie}>
           <MovieDetails movie={movie} />
         </PageTemplate>
+        
         <div className="row">
           <div className="col-12 ">
             {!props.history.location.pathname.endsWith("/reviews") ? (
@@ -38,6 +39,14 @@ const MoviePage = props => {
           path={`/movies/:id/reviews`}
           render={props => <MovieReviews movie={movie} {...props} />}
         />
+      
+              <div style={{marginTop:10}}><Link
+                className="btn btn-primary btn-block active"
+                to={{pathname :`/${movie.id}/similar`}}
+              >
+                Show similar movies
+              </Link></div>
+
       </>
     ) : (
       <p>Waiting for movie details</p>
