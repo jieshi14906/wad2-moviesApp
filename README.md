@@ -143,6 +143,7 @@ List reference material links (articles/blogs).
 https://dzone.com/articles/why-should-you-switch-to-cypress-for-modern-web-te
 ---------------------------------
 
+
 [movieDetail]: ./public/movieDetail.png
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
