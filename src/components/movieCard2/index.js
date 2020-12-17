@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./movieCard2.css";
 import "../../globals/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { HeartOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import { Rate } from 'antd';
 import { FrownOutlined, MehOutlined, SmileOutlined } from '@ant-design/icons';

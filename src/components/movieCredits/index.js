@@ -8,7 +8,10 @@ export default ({ movie }) => {
     getMovieCredits(movie.id).then(credits => {
       setCast(credits.cast);
     }); 
+    // eslint-disable-next-line
   }, []);
+
+  
 
   return (
     <>
